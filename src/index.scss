@@ -1,0 +1,36 @@
+@import './css-config/mixins.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(203, 200, 200);
+}
+
+.main-container {
+    @include dis-flex;
+    padding: 2rem;
+    .date-conatiner {
+        height: 400px;
+        width: max-content;
+        padding: 2rem;
+        @include my-border-1;
+        @include dis-flex-col-no-jc;
+        .steps-container {
+            @include dis-flex;
+            padding: 1rem;
+        }
+        .btn {
+            @include my-btn;
+        }
+        .count-container {
+            @include dis-flex;
+        }
+        .date-container {
+            @include dis-flex;
+        }
+    }
+}

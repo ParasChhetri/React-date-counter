@@ -1,0 +1,31 @@
+@mixin my-btn {
+    cursor: pointer;
+    padding: 0.625rem;
+    border-radius: 0.75rem;
+    border: none;            
+    box-shadow: 2px 2px 4px,
+                2px 2px 4px inset aqua,
+                -2px -2px 4px inset ;
+}
+@mixin dis-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@mixin dis-flex-col-no-jc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@mixin my-border-1 {
+    border: 4px solid aqua;
+    border-radius: 1rem;
+    box-shadow: 4px 6px 8px,
+                -4px -4px 4px white,
+                4px 6px 4px inset,
+                -6px -6px 4px inset white;
+}
